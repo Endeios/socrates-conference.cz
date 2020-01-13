@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Socrates Day in Prague: Episode 1"
+date:   2019-10-26 20:30:00 +0100
+categories: socrates_day 
+---
+![SoCraTes day Map](/assets/e1-wardley-map.jfif)
+
+# "Whoever comes is the right people"
+
+We (me with [David Kaya](https://www.linkedin.com/in/davidkaya/)) organized the first edition of our SoCraTes day in Prague. It actually turned out very cool. As the rules of open space says, the right people turned out. We had fun together, we learn about each other, with each other and from each other.
+
+The first thing we shared was "[Event Storming](https://www.eventstorming.com/)" (by [Alberto Brandolini](https://www.linkedin.com/in/brando/)): I have been studying the technique for some time now and I finally felt that I can run the "Software Project Discovery" kind of "Big Picture Workshop".
+
+We actually had a shared understating of "our" application called "Angry Drones": a food delivery business for angry (and hungry) drivers, via drones on the D1 Czech highway. This will turn out to be a bit the theme of the day.
+
+After that, we time boxed ("till lunch arrives") an architectural kata about how to structure the application. [Saul](https://www.linkedin.com/in/sa%C3%BAl-mielgo-garc%C3%ADa-25a79b47/) facilitated most of it, and as I understand was his first facilitation with that context. He held the context and helped us keep our assumptions visible, so he nailed it!
+
+After lunch was time for [Filip](https://www.linkedin.com/in/filip-staffa/) to share a presentation about [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security). He presented the history of the standard and he reminded us the deprecation dates and the reasons. It was amazing for me, because keeping track of those things is challenging: thanks Filip Štaffa for that! I feel like I updated my own TLS library now!
+
+We then got [Tamas's](https://www.linkedin.com/in/tam%C3%A1s-hajdu-790bab17/) beautiful and compelling presentation about [Wardley's maps](https://medium.com/wardleymaps). We strategized about how to start our "Angry Drones" business, what was core business, what was "enabling" and what could be outsourced. It was nothing short than energizing: Wardley maps are a great tool.
+
+We finished the day having a glass of wine and some desk game, just for the fun and for the relax of it
+
+Thanks also to [YSoft](http://www.ysoft.com/en), that graciously provided materials, food, space, t-shirts and chewing gums. Thanks a lot to [Klara](https://www.linkedin.com/in/klara-miturova-1178a8144/) for her help, for providing for us from behind the curtains.
+
+Personal Note:
+
+The reason I go to the SoCraTes kind of events is the energy you get in there. A very peculiar type of energy: the strength of the group. Pushing yourself to be a crafter can be frustrating at times, and having a group of like minded people with whom dialogue can transform low energy situations in new sources of energy. I am very thankful for being part of this.
