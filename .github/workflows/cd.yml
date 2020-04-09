@@ -22,6 +22,8 @@ jobs:
         gem install bundler jekyll
         bundle install --jobs 4 --retry 3
         jekyll build
+    - name: List built folder
+      run: ls _site/
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.0.7
       env:
