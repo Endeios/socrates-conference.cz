@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Build and push to server
+    - name: Build site
       run: |
         gem install bundler jekyll
         bundle install --jobs 4 --retry 3
@@ -29,7 +29,7 @@ jobs:
       with:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
-        key: ${{ secrets.REMOTE_HOST }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
         script: whoami
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.0.7
