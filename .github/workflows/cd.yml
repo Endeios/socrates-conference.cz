@@ -33,6 +33,7 @@ jobs:
       with:
         source: "_site/*"
         target: "/var/www/html"
+        strip_components: 1 
     - name: Listing files to check deploy
       uses: appleboy/ssh-action@master
       with:
