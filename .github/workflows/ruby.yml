@@ -22,3 +22,12 @@ jobs:
         gem install bundler jekyll
         bundle install --jobs 4 --retry 3
         jekyll build
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "_site/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
