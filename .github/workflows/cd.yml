@@ -24,19 +24,19 @@ jobs:
         jekyll build
     - name: List built folder
       run: ls _site/
-    - name: executing remote ssh commands using ssh key
+    - name: Deploy via ssh
+      uses: appleboy/scp-action@master
+      env:
+        HOST: ${{ secrets.REMOTE_HOST }}
+        USERNAME: ${{ secrets.REMOTE_USER }}
+        KEY: ${{ secrets.SERVER_SSH_KEY }}
+      with:
+        source: "_site/*"
+        target: "/var/www/html"
+    - name: Listing files to check deploy
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SERVER_SSH_KEY }}
         script: ls -la /var/www/html
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v2.0.7
-      env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rltgoDzvvvO --delete"
-          SOURCE: "_site/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
